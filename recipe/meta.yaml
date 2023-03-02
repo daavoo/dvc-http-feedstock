@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,6 @@ requirements:
     - setuptools_scm >=6.3.1
   run:
     - python >=3.8
-    - dvc
     - fsspec
     - aiohttp-retry >=2.5.0
 
